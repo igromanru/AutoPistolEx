@@ -1,0 +1,51 @@
+
+AutoPistolEx is a powerful click bot.
+Copyright (C) 2011-2013 Alexander Poplavsky
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+
+
+
+			AutoPistol Expanded
+		   Igromanru © 2011-2013
+
+
+Changes:
+#====================================================================
+v 1.7.7:
+  AutoPistol:
+	- added Recoil Keeper for x-axis
+v 1.7.6:
+  - new function was added:
+    Clicks-Bot:
+	Allow you to click variabel times on the currently mouse position.
+  
+v 1.7.5:
+  - now is possible to set a Hotkey for activation/deactivation the AutoPistol
+  - activated/deactivated sound was changed
+
+v 1.7.4:
+  - now is allowed to use Mouse1 as AP HotKey and ShootKey at same time. 
+    Warning: This function don´t support all games!
+  
+v 1.7.3:
+  - changed the resources directory to the Temp folder
+  
+v 1.7.2:
+  - fixed some save-bugs in Keybinder
+  - Changelog added
+  - few shoot keys were added (Numpad 0, Numpad 7, Numpad 8, Numpad 9)
+#====================================================================
