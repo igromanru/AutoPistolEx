@@ -48,12 +48,12 @@ SplashOff()
 ;~ _checkHWID()
 
 ; Igromanru HWID: {68A91514-23C2-FDE2-E88E-ED7E4F5EF5F2}
-FileInstall(".\activated.wav", @TempDir & "\activated.wav", 1)
-FileInstall(".\deactivated.wav", @TempDir & "\deactivated.wav", 1)
-FileInstall(".\leftPoint.jpg", @TempDir & "\leftPoint.jpg", 1)
-FileInstall(".\rightPoint.jpg", @TempDir & "\rightPoint.jpg", 1)
-FileInstall(".\topPoint.jpg", @TempDir & "\topPoint.jpg", 1)
-FileInstall(".\botPoint.jpg", @TempDir & "\botPoint.jpg", 1)
+FileInstall(".\data\activated.wav", @TempDir & "\activated.wav", 1)
+FileInstall(".\data\deactivated.wav", @TempDir & "\deactivated.wav", 1)
+FileInstall(".\data\leftPoint.jpg", @TempDir & "\leftPoint.jpg", 1)
+FileInstall(".\data\rightPoint.jpg", @TempDir & "\rightPoint.jpg", 1)
+FileInstall(".\data\topPoint.jpg", @TempDir & "\topPoint.jpg", 1)
+FileInstall(".\data\botPoint.jpg", @TempDir & "\botPoint.jpg", 1)
 
 #region Global define
 Global Const $COPYRIGHT = _StringToHex("Igromanru © 2011-2013")
