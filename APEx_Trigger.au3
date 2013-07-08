@@ -15,7 +15,7 @@
 ;	Copyright (C) 2011-2013 Alexander Poplavsky
 
 #Include <Misc.au3>
-#include "EnhancedMouseClick.au3"
+#include "UDF/EnhancedMouseClick.au3"
 
 OnAutoItExitRegister( "_Cleaner" )
 

@@ -36,8 +36,8 @@ EndIf
 ;~ #Include <WinAPIEx.au3>
 ;~ #include <INet.au3>
 
-#include "Blowfish_UDF.au3"
-#include "EnhancedMouseClick.au3"
+;~ #include "Blowfish_UDF.au3"
+#include "UDF\EnhancedMouseClick.au3"
 
 Global Const $PROG = "AutoPistolEx v" & $VERSION
 Global Const $STARTED_TIME = @HOUR & ":" & @MIN
@@ -416,7 +416,7 @@ If FileExists(@ScriptDir&"\APEx.ini") = 1 Then
 EndIf
 $dll = DllOpen("user32.dll")
 
-#include "_KeyManager.au3"
+#include "UDF\_KeyManager.au3"
 
 GUIRegisterMsg( $WM_HSCROLL, "WM_HSCROLL" )
 ;~ TraySetOnEvent($TRAY_EVENT_PRIMARYDOUBLE, "maxGui")
@@ -533,9 +533,9 @@ Func WM_HSCROLL()
 	EndIf
 EndFunc
 
-#include "_Keybinder.au3"
-#include "_AutoPistol.au3"
-#include "_Clicks-Bot.au3"
+#include "UDF\_Keybinder.au3"
+#include "UDF\_AutoPistol.au3"
+#include "UDF\_Clicks-Bot.au3"
 
 #region OnChange Functions
 Func _onSliderChange()
@@ -633,7 +633,7 @@ Func _onClicksSpeedChange()
 EndFunc
 #endregion OnChange Functions
 
-#include "_Triggerbot.au3"
+#include "UDF\_Triggerbot.au3"
 
 ;~ Func _logText()
 ;~ 	;Leertaste
@@ -747,7 +747,7 @@ Func _changeLogClose()
 EndFunc
 #endregion Changelog
 
-#include "_SaveAndLoad.au3"
+#include "UDF\_SaveAndLoad.au3"
 
 ;~ Func _checkHWID()
 ;~ 	Local $sCrypt =	_INetGetSource("http://web1.hc121089.tuxtools.net/crypt.html")
