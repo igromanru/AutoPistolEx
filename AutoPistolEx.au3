@@ -1,3 +1,29 @@
+#cs ----------------------------------------------------------------------------
+   Copyright (C) 2011-2013 Igromanru
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+#ce ----------------------------------------------------------------------------
+
+#cs ----------------------------------------------------------------------------
+ AutoIt Version: 3.3.8.1
+ Author: Igromanru
+
+ Script Description: This is a helpful tool wich works for most FPS-Games.
+						It´s help you to fire very fast with a pistol or other similar weapons.
+						Feel free to discover other features by yourself.
+
+#ce ----------------------------------------------------------------------------
+
 #NoTrayIcon
 #RequireAdmin
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
@@ -7,12 +33,9 @@
 #AutoIt3Wrapper_Res_Description=AutoPistol Expanded
 #AutoIt3Wrapper_Res_Fileversion=1.7.7.0
 #AutoIt3Wrapper_Res_ProductVersion=1.7.7.0
-#AutoIt3Wrapper_Res_LegalCopyright=Alexander Poplavsky (Igromanru)
+#AutoIt3Wrapper_Res_LegalCopyright=Igromanru
 #AutoIt3Wrapper_Res_requestedExecutionLevel=requireAdministrator
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
-
-;	AutoPistolEx
-;	Copyright (C) 2011-2013 Alexander Poplavsky
 
 Global Const $VERSION = "1.7.7"
 Global Const $FORM_NAME = "AutoPistol Expanded v" & $VERSION & " : : by Igromanru"
@@ -635,95 +658,6 @@ EndFunc
 
 #include "UDF\_Triggerbot.au3"
 
-;~ Func _logText()
-;~ 	;Leertaste
-;~ 	$j = "20"
-;~ 	If _IsPressed($j, $dll) Then
-;~ 		While _IsPressed($j, $dll)
-;~ 			Sleep(1)
-;~ 		WEnd
-;~ 		_logToString($j)
-;~ 		Return 1
-;~ 	EndIf
-;~ 	;Enter
-;~ 	$y = "0D"
-;~ 	If _IsPressed($y, $dll) Then
-;~ 		While _IsPressed($y, $dll)
-;~ 			Sleep(1)
-;~ 		WEnd
-;~ 		_logToString($y)
-;~ 		Return 1
-;~ 	EndIf
-;~ 	;Backspace
-;~ 	$g = "08"
-;~ 	If _IsPressed($g, $dll) Then
-;~ 		While _IsPressed($g, $dll)
-;~ 			Sleep(1)
-;~ 		WEnd
-;~ 		_logToString($g)
-;~ 		Return 1
-;~ 	EndIf
-;~ 	; 0 - 9
-;~ 	For $i = 48 To 57 Step +1   ;0x30 To 0x39 in Dec
-;~ 		$key = Hex($i)
-;~ 		If _IsPressed($key, $dll) Then
-;~ 			If _IsPressed("10", $dll) Or _IsPressed("14", $dll) Then
-;~ 				$key -= 10
-;~ 			EndIf
-;~ 			While  _IsPressed($key, $dll)
-;~ 				Sleep(1)
-;~ 			WEnd
-;~ 			_logToString($key)
-;~ 			Return 1
-;~ 		EndIf
-;~ 	Next
-;~ 	; A - Z
-;~ 	For $i = 65 To 90 Step +1	;0x41 To 0x5A in Dec
-;~ 		$lLower = True
-;~ 		$key = Hex($i)
-;~ 		If _IsPressed($key, $dll) Then
-;~ 			If _IsPressed("10", $dll) Or _IsPressed("14", $dll) Then
-;~ 				$lLower = False
-;~ 			Else
-;~ 				$lLower = True
-;~ 			EndIf
-;~ 			While  _IsPressed($key, $dll)
-;~ 				Sleep(1)
-;~ 			WEnd
-;~ 			_logToString($key, $lLower)
-;~ 			Return 1
-;~ 		EndIf
-;~ 	Next
-;~ 	; Operatoren + - */ etc
-#cs
-	For $i = 0x6A To 0x6F Step +1
-	If _IsPressed($i, $dll) Then
-	While  _IsPressed($i, $dll)
-	Sleep(1)
-	WEnd
-	_logToString($i)
-	Return 1
-	EndIf
-	Next
-#ce
-;~ EndFunc
-
-;~ Func _logToString($cHex, $lLower = True)
-;~ 	$nineInput = GUICtrlRead($Input[9])
-;~ 	If $cHex = "20" Then
-;~ 		$nineInput &= " "
-;~ 	ElseIf $cHex = "0D" Then
-;~ 		$nineInput &= "{ENTER}"
-;~ 	ElseIf $cHex = "08" Then
-;~ 		$nineInput = StringTrimRight($nineInput, 1)
-;~ 	ElseIf $lLower = True Then
-;~ 		$nineInput &= StringLower(Chr(Dec($cHex)))
-;~ 	ElseIf $lLower = False Then
-;~ 		$nineInput &= Chr(Dec($cHex))
-;~ 	EndIf
-;~ 	GUICtrlSetData($Input[9], $nineInput)
-;~ EndFunc   ;==>_logToString
-
 #region Changelog
 Func _showChangelog()
 	Local $fopen, $sChangeLog
@@ -777,12 +711,6 @@ Func SpecialEvents()
 			FileDelete(@TempDir & "\APEx_Changelog.txt")
 
 			_TriggerStop()
-;~ 			If @UserName <> "Igromanru" Then
-;~ 				$rdyprog = StringReplace($PROG, " ", "+")
-;~ 				$sendphp = "http://igrodb.co.de/index.php?prog=" & $rdyprog & "&user=" & @UserName & "&time=" & $STARTED_TIME & "-" & @HOUR & ":" & @MIN & "&date=" & @MDAY & "." & @MON & "." & @YEAR
-;~ 				$oIE = _IECreate($sendphp, 0, 0)
-;~ 				_IEQuit($oIE)
-;~ 			EndIf
 			Exit
 
 ;~         Case @GUI_CtrlId = $GUI_EVENT_MINIMIZE
