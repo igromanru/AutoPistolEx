@@ -1,9 +1,12 @@
 			AutoPistol Expanded
-		   Igromanru © 2011-2013
+		   Igromanru © 2011-2014
 
 
 Changes:
 #====================================================================
+v 1.7.8:
+  AutoPistol|Clicks-Bot:
+	- added more Hotkeys (NumPad and F-Keys)
 v 1.7.7:
   AutoPistol:
 	- added Recoil Keeper for x-axis

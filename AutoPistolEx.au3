@@ -31,13 +31,13 @@
 #AutoIt3Wrapper_Compression=4
 #AutoIt3Wrapper_UseUpx=n
 #AutoIt3Wrapper_Res_Description=AutoPistol Expanded
-#AutoIt3Wrapper_Res_Fileversion=1.7.7.0
-#AutoIt3Wrapper_Res_ProductVersion=1.7.7.0
+#AutoIt3Wrapper_Res_Fileversion=1.7.8.0
+#AutoIt3Wrapper_Res_ProductVersion=1.7.8.0
 #AutoIt3Wrapper_Res_LegalCopyright=Igromanru
 #AutoIt3Wrapper_Res_requestedExecutionLevel=requireAdministrator
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 
-Global Const $VERSION = "1.7.7"
+Global Const $VERSION = "1.7.8"
 Global Const $FORM_NAME = "AutoPistol Expanded v" & $VERSION & " : : by Igromanru"
 If WinExists($FORM_NAME) Then
 	MsgBox(48,"Error", "This program is already runnung!")
