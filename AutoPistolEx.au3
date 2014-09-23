@@ -1,5 +1,5 @@
 #cs ----------------------------------------------------------------------------
-   Copyright (C) 2011-2013 Igromanru
+   Copyright (C) 2011-2014 Igromanru
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -79,7 +79,7 @@ FileInstall(".\data\topPoint.jpg", @TempDir & "\topPoint.jpg", 1)
 FileInstall(".\data\botPoint.jpg", @TempDir & "\botPoint.jpg", 1)
 
 #region Global define
-Global Const $COPYRIGHT = _StringToHex("Igromanru © 2011-2013")
+Global Const $COPYRIGHT = _StringToHex("Igromanru © 2011-2014")
 
 Global $Input[10], $Enter[10][2]
 Global $sKey, $sClicksKey
@@ -123,7 +123,7 @@ $LabAPkey = GUICtrlCreateLabel("AP HotKey:", 39, 36, 77, 18)
 GUICtrlSetBkColor(-1, 0xFFFFFF)
 GUICtrlSetTip(-1, "Hotkey for AutoShooting")
 $cbAPkey = GUICtrlCreateCombo("", 98, 34, 73, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
-GUICtrlSetData(-1, "Mouse1|Mouse2|Mouse3|Mouse4|Mouse5", "Mouse1")
+GUICtrlSetData(-1, "Mouse1|Mouse2|Mouse3|Mouse4|Mouse5|NumPad0|NumPad1|NumPad2|NumPad3|NumPad4|NumPad5|NumPad6|NumPad7|NumPad8|NumPad9|F1|F2|F3|F4|F5", "Mouse1")
 GUICtrlSetTip(-1, "Hotkey for AutoShooting")
 $LabShootKey = GUICtrlCreateLabel("ShootKey:", 44, 66, 54, 18)
 GUICtrlSetBkColor(-1, 0xFFFFFF)
@@ -392,7 +392,7 @@ $LabClickHotkey = GUICtrlCreateLabel("HotKey:", 20, 36, 77, 18)
 GUICtrlSetBkColor(-1, 0xFFFFFF)
 GUICtrlSetTip(-1, "Start Hotkey for the Clicker")
 $cbClickHotkey = GUICtrlCreateCombo("", 68, 34, 73, 25, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
-GUICtrlSetData(-1, "Mouse1|Mouse2|Mouse3|Mouse4|Mouse5|F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|Spacebar", "Mouse4")
+GUICtrlSetData(-1, "Mouse1|Mouse2|Mouse3|Mouse4|Mouse5|F1|F2|F3|F4|F5|F6|F7|F8|F9|F10|F11|F12|Spacebar|NumPad0|NumPad1|NumPad2|NumPad3|NumPad4|NumPad5|NumPad6|NumPad7|NumPad8|NumPad9", "Mouse4")
 GUICtrlSetTip(-1, "Start Hotkey for the Clicker")
 $LabClickKey = GUICtrlCreateLabel("ClickOn:", 20, 66, 54, 18)
 GUICtrlSetBkColor(-1, 0xFFFFFF)
