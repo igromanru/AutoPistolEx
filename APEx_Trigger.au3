@@ -36,11 +36,13 @@
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 
 #Include <Misc.au3>
-#include "UDF/EnhancedMouseClick.au3"
+#include "UDF\EnhancedMouseClick.au3"
 
 OnAutoItExitRegister( "_Cleaner" )
 
 Global $dll = DllOpen("user32.dll")
+
+#include "UDF\_KeyManager.au3"
 
 If $CmdLine[0] < 9 Then
 	MsgBox(48,"Error", "Triggerbot can only be startet from APEx!")
@@ -64,7 +66,7 @@ While 1
 		IsArray(PixelSearch($rightPosX, $rightPosY, $rightPosX+5, $rightPosY, $sColor, $iShade)) Or _
 		IsArray(PixelSearch($topPosX, $topPosY-5, $topPosX, $topPosY, $sColor, $iShade)) Or _
 		IsArray(PixelSearch($botPosX, $botPosY, $botPosX, $botPosY+5, $sColor, $iShade)) Then
-		_shootManager($sMouse)
+		_shootManager($sMouse, "")
 	EndIf
 	If _IsPressed("79", $dll) Then
 		While _IsPressed("79", $dll) = True
@@ -75,20 +77,20 @@ While 1
 	Sleep(1)
 WEnd
 
-Func _shootManager($sBut)
-	Switch $sBut
-		Case "Mouse1"
-			_EnhancedMouseClick($dll, "left")
-		Case "Mouse2"
-			_EnhancedMouseClick($dll, "right")
-		Case "Mouse3"
-			_EnhancedMouseClick($dll, "middle")
-		Case "Mouse4"
-			_EnhancedMouseClick($dll, "x1")
-		Case "Mouse5"
-			_EnhancedMouseClick($dll, "x2")
-	EndSwitch
-EndFunc
+;~ Func _shootManager($sBut)
+;~ 	Switch $sBut
+;~ 		Case "Mouse1"
+;~ 			_EnhancedMouseClick($dll, "left")
+;~ 		Case "Mouse2"
+;~ 			_EnhancedMouseClick($dll, "right")
+;~ 		Case "Mouse3"
+;~ 			_EnhancedMouseClick($dll, "middle")
+;~ 		Case "Mouse4"
+;~ 			_EnhancedMouseClick($dll, "x1")
+;~ 		Case "Mouse5"
+;~ 			_EnhancedMouseClick($dll, "x2")
+;~ 	EndSwitch
+;~ EndFunc
 
 Func _Cleaner()
 	ControlClick("AutoPistol Expanded", "", 59, "left", 2)
