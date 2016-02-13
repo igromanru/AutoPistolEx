@@ -47,6 +47,14 @@ Func _ActivateTrigger()
 	EndIf
 EndFunc
 
+Func _ToggleTriggerBot()
+	IF $bTriggerRuning Then
+		_TriggerStop()
+	Else
+		_TriggerRun()
+	EndIf
+EndFunc
+
 Func _TriggerRun()
 	Local $sColor, $sMouse
 	Local $leftPx = 0, $rightPx = 0, $topPx = 0, $botPx = 0
@@ -85,7 +93,7 @@ Func _TriggerRun()
 		GUICtrlSetState($TrigRunBut, $GUI_DISABLE)
 		GUICtrlSetState($TrigStopBut, $GUI_ENABLE)
 		GUICtrlSetState($ActivTrigRun, $GUI_DISABLE)
-		$trigRuns = True
+		$bTriggerRuning = True
 		SoundPlay(@TempDir & "\activated.wav")
 	EndIf
 EndFunc
@@ -99,7 +107,7 @@ Func _TriggerStop()
 	GUICtrlSetState($TrigRunBut, $GUI_ENABLE)
 	GUICtrlSetState($TrigStopBut, $GUI_DISABLE)
 	GUICtrlSetState($ActivTrigRun, $GUI_ENABLE)
-	$trigRuns = False
+	$bTriggerRuning = False
 	SoundPlay(@TempDir & "\deactivated.wav")
 EndFunc
 

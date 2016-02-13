@@ -1,9 +1,12 @@
 			AutoPistol Expanded
-		   Igromanru © 2011-2014
+		   Igromanru © 2011-2016
 
 
 Changes:
 #====================================================================
+v 1.7.9:
+  Triggerbot:
+	- fixed: F10 wasn´t toggling properly.
 v 1.7.8:
   AutoPistol|Clicks-Bot:
 	- added more Hotkeys (NumPad and F-Keys)
