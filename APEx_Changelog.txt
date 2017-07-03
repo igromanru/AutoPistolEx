@@ -1,9 +1,12 @@
 			AutoPistol Expanded
-		   Igromanru © 2011-2016
+		   Igromanru © 2011-2017
 
 
 Changes:
 #====================================================================
+v 1.7.10:
+  - changed description and product name.
+  - recompiled, to make it undetected for some AC who got the exe Hash in their list.
 v 1.7.9:
   Triggerbot:
 	- fixed: F10 wasn´t toggling properly.
