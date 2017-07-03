@@ -1,5 +1,19 @@
+#NoTrayIcon
+#RequireAdmin
+#Region ;**** Directives created by AutoIt3Wrapper_GUI ****
+#AutoIt3Wrapper_Icon=logitech-G5.ico
+#AutoIt3Wrapper_Compression=4
+#AutoIt3Wrapper_UseUpx=y
+#AutoIt3Wrapper_Res_Description=AutoPistol Expanded Triggerbot
+#AutoIt3Wrapper_Res_Field=ProductName|AutoPistol Expanded Triggerbot
+#AutoIt3Wrapper_Res_Fileversion=1.0.1.0
+#AutoIt3Wrapper_Res_ProductVersion=1.0.1.0
+#AutoIt3Wrapper_Res_LegalCopyright=Igromanru
+#AutoIt3Wrapper_Res_Language=1031
+#AutoIt3Wrapper_Res_requestedExecutionLevel=asInvoker
+#EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #cs ----------------------------------------------------------------------------
-   Copyright (C) 2011-2013 Igromanru
+   Copyright (C) 2011-2017 Igromanru
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -21,19 +35,6 @@
  Script Description: AutoIt does not support multithreading, so I made a separate task for the triggerbot.
 
 #ce ----------------------------------------------------------------------------
-
-#NoTrayIcon
-#RequireAdmin
-#Region ;**** Directives created by AutoIt3Wrapper_GUI ****
-#AutoIt3Wrapper_Icon=logitech-G5.ico
-#AutoIt3Wrapper_Compression=4
-#AutoIt3Wrapper_UseUpx=n
-#AutoIt3Wrapper_Res_Fileversion=1.0.0.0
-#AutoIt3Wrapper_Res_ProductVersion=1.0.0.0
-#AutoIt3Wrapper_Res_LegalCopyright=Igromanru
-#AutoIt3Wrapper_Res_Language=1031
-#AutoIt3Wrapper_Res_requestedExecutionLevel=asInvoker
-#EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 
 #Include <Misc.au3>
 #include "UDF\EnhancedMouseClick.au3"
