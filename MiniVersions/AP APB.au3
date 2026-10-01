@@ -75,6 +75,7 @@ Global $actAPkey = "7A"
 Opt("GUIOnEventMode", 1)
 Opt("TrayMenuMode", 1)
 Opt("TrayOnEventMode", 1)
+Opt("SendKeyDelay", 0)
 
 #region Form1
 $Form1 = GUICreate($FORM_NAME, 380, 368, -1, -1)

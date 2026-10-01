@@ -99,6 +99,7 @@ $aDis[1] = 0
 Opt("GUIOnEventMode", 1)
 Opt("TrayMenuMode", 1)
 Opt("TrayOnEventMode", 1)
+Opt("SendKeyDelay", 0)
 
 #region Form1
 $Form1 = GUICreate($FORM_NAME, 400, 430, -1, -1)
