@@ -13,7 +13,7 @@
 #AutoIt3Wrapper_Res_requestedExecutionLevel=asInvoker
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #cs ----------------------------------------------------------------------------
-   Copyright (C) 2011-2017 Igromanru
+   Copyright (C) 2011-2026 Igromanru
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

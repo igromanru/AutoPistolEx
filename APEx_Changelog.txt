@@ -1,15 +1,17 @@
 			AutoPistol Expanded
-		   Igromanru © 2011-2017
+		   Igromanru Â© 2011-2026
 
 
 Changes:
 #====================================================================
+v 1.7.11:
+  - added Spacebar as a new "Shoot Key" option
 v 1.7.10:
   - changed description and product name.
   - recompiled, to make it undetected for some AC who got the exe Hash in their list.
 v 1.7.9:
   Triggerbot:
-	- fixed: F10 wasn´t toggling properly.
+	- fixed: F10 wasn`t toggling properly.
 	- added: more shoot keys for triggerbot.
 v 1.7.8:
   AutoPistol|Clicks-Bot:
@@ -28,7 +30,7 @@ v 1.7.5:
 
 v 1.7.4:
   - now is allowed to use Mouse1 as AP HotKey and ShootKey at same time. 
-    Warning: This function don´t support all games!
+    Warning: This function don`t support all games!
   
 v 1.7.3:
   - changed the resources directory to the Temp folder
