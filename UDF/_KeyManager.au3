@@ -42,6 +42,12 @@ Func _shootManager($sBut, $sAPkey)
 			Send("{NUMPAD9}")
 		Case "Spacebar"
 			Send("{SPACE}")
+		Case "X"
+			Send("x")
+		Case "Y"
+			Send("y")
+		Case "Z"
+			Send("z")
 	EndSwitch
 EndFunc   ;==>_shootManager
 
